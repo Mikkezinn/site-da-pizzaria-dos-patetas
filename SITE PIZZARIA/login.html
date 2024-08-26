@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Login</h1>
+        <form id="loginForm">
+            <input type="text" id="username" placeholder="Usuário" required>    <!----cria uma caixa de texto que é colocado o nome de usuario-->
+            <input type="password" id="password" placeholder="Senha" required>  <!----cria uma caixa de texto que é colocado a senha de login-->
+            <button type="submit">Entrar</button>
+        </form>
+        <div id="error" class="error-message"></div>
+        <div class="registrar-container">
+            <button onclick="window.location.href='registro.html'">Criar Conta</button>  <!---Cria um botão q ao clicar leva até a página de criar conta-->
+        
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

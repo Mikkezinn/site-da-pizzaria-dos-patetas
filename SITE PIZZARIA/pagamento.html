@@ -1,0 +1,39 @@
+<!DOCTYPE html> <!---pagina de pagamento-->
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Pagamento</title>
+</head>
+<body>
+    <div class="pagamento-container">
+        <h1>Forma de Pagamento</h1>
+        <form id="paymentForm">
+            <label>
+                <input type="radio" name="payment" value="cartao credito" required> Cartão de Crédito
+            </label>
+            <label>
+                <input type="radio" name="payment" value="cartao debito" required> Cartão de Débito
+            </label>
+            <label>
+                <input type="radio" name="payment" value="dinheiro" required> Dinheiro
+            </label>
+            <label>
+                <input type="radio" name="payment" value="pix" required> Pix
+            </label>
+            <button type="submit">Finalizar Pedido</button>
+        </form>
+    </div>
+
+    <script>
+         document.getElementById("paymentForm").addEventListener("submit", function(event) {
+         event.preventDefault(); 
+         alert("Pedido finalizado com sucesso!");
+           
+         window.location.href = "index.html"; 
+        });
+    </script>
+</body>
+</html>
