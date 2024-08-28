@@ -1,6 +1,6 @@
 * {  /* se puderem me ajudar com a parte de layout do site, eu nao manjo mt de css, eu fiz uma parte e a parte que nao consegui eu fui atrás de ajuda 
     -Abiny */
-    margin: 0;
+    margin: 0; 
     padding: 0;
     box-sizing: border-box;
 }
@@ -193,4 +193,4 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-}
+} 
