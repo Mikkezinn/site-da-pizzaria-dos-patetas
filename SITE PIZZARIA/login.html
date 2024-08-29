@@ -1,27 +1,37 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!--A parte de Html e Js foi mais de boa, se puderem me ajudar no layout, enquanto nós iniciamos o site, 
+eu vou ir fazendo as aulas de python -Abiny -->
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Login</title>
+    <title>Pagina inicial Projeto Pizzaria</title>
 </head>
 <body>
-    <div class="login-container">
-        <h1>Login</h1>
-        <form id="loginForm">
-            <input type="text" id="username" placeholder="Usuário" required>    <!----cria uma caixa de texto que é colocado o nome de usuario-->
-            <input type="password" id="password" placeholder="Senha" required>  <!----cria uma caixa de texto que é colocado a senha de login-->
-            <button type="submit">Entrar</button>
-        </form>
-        <div id="error" class="error-message"></div>
-        <div class="registrar-container">
-            <button onclick="window.location.href='registro.html'">Criar Conta</button>  <!---Cria um botão q ao clicar leva até a página de criar conta-->
-        
-        </div>
-    </div>
+<header>
+    <nav>
+        <ul>
+             <li><a href="login.html">Login</a></li>
+             <li><a href="registro.html">Registrar</a></li>
+             <li><a href="menu.html">Cardápio</a></li>
+             <li><a href="endereco.html">Endereço</a></li>
+         </ul>
+        </nav>
+    </header>
 
-    <script src="js/script.js"></script>
+    <main>
+        <section class="welcome">
+            <h1>Bem vindo a Denala Pizza </h1>
+            <p>Faça seu pedido e aproveite nossas deliciosas pizzas.</p>
+        </section>
+        <section class="cta">
+            <a href="menu.html" class="button">Veja o Cardápio</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Pizzaria Denala. Todos os direitos reservados.  :) </p>
+    </footer>
 </body>
 </html>
